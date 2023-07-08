@@ -5,7 +5,7 @@ function Signin() {
     <div>
       <div className="flex justify-center items-center h-screen bg-white">
         <div className="p-5 flex flex-col">
-          <span className="text-black text-center text-3xl p-3 font-bold">
+          <span className="text-black text-center text-3xl p-3 font-bold font-mono">
             Sign Up
           </span>
           <form className="w-96 bg-white shadow-md rounded px-8 py-6">
