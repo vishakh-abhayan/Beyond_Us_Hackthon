@@ -1,14 +1,29 @@
 import React from "react";
 
-function Login() {
+function Signin() {
   return (
     <div>
       <div className="flex justify-center items-center h-screen bg-white">
         <div className="p-5 flex flex-col">
           <span className="text-black text-center text-3xl p-3 font-bold">
-            Login
+            Sign Up
           </span>
           <form className="w-96 bg-white shadow-md rounded px-8 py-6">
+            <div className="mb-4">
+              <label
+                className="block text-gray-700 text-sm font-light mb-2"
+                htmlFor="email"
+              >
+                Username
+              </label>
+              <input
+                className=" bg-transparent border border-b-3 w-full py-2 px-3 text-gray-700 leading-tight outline-none "
+                id="email"
+                type="text"
+                placeholder="username"
+                required
+              />
+            </div>
             <div className="mb-4">
               <label
                 className="block text-gray-700 text-sm font-light mb-2"
@@ -44,11 +59,11 @@ function Login() {
                 className="bg-gray-700 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                 type="submit"
               >
-                Log In
+                Sign Up
               </button>
               <span className="font-light text-black pt-5">
-                Don’t have an account?{" "}
-                <span className="text-blue-500">Sign up</span>
+                Have an account already?{" "}
+                <span className="text-blue-500">Log in</span>
               </span>
             </div>
           </form>
@@ -58,4 +73,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Signin;
