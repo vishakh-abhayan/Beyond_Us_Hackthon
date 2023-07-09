@@ -48,4 +48,4 @@ To run the Open-Source Community Learning Platform locally, follow these steps:
     yarn dev
    ```
 
-Open your browser and visit http://localhost:3000 to access the platform.
+Open your browser and visit http://localhost:5173/ to access the platform.
