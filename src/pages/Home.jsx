@@ -4,6 +4,9 @@ import interaction from "../assets/interaction.png";
 import interactive from "../assets/interactive.png";
 import undraw from "../assets/undraw.png";
 import chat from "../assets/chat.png";
+import WhyUs from "./WhyUs";
+import Statistics from "./Statistics";
+import Feedback from "./Feedback";
 
 const Home = () => {
   return (
@@ -227,6 +230,21 @@ const Home = () => {
         alt=""
         src={undraw}
       />
+
+      {/* Why Us Component */}
+      <h2 className="text-2xl font-bold mb-4 p-10">
+        <center>Why Us ?</center>{" "}
+      </h2>
+      <div className="inline-flex">
+        <WhyUs text="Online LIVE Class" image="monitor.png" />
+        <WhyUs text="Doubt Solving" image="question.png" />
+        <WhyUs text="Personal Teacher" image="teacher.png" />
+        <WhyUs text="Test Series" image="search.png" />
+      </div>
+
+      {/* Statistics and Feedback */}
+      <Statistics />
+      <Feedback />
     </div>
   );
 };
